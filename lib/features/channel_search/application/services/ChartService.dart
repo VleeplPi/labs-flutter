@@ -1,4 +1,4 @@
-import 'package:lab10/features/channel_search/domain/models/ChartDataResult.dart';
+import 'package:lab10/features/channel_search/domain/models/ChartDataSourceItem.dart';
 
 import '../../domain/models/ChartData.dart';
 
@@ -9,6 +9,7 @@ final class ChartService{
     List<ChartData> filteredChartData = chartData.where((ChartData itemData) => itemData.date.year == selectedYear).toList();
     print("chart data after select: ${chartData.length}");
     return filteredChartData;
-
   }
+
+
 }

@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:open_file/open_file.dart';
 
 import '../../domain/models/ChartData.dart';
-import '../../domain/models/ChartDataResult.dart';
+import '../../domain/models/ChartDataSourceItem.dart';
 
 final class FileService {
   Future<List<List<dynamic>>> loadCSV() async {
